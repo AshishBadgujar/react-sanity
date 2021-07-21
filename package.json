@@ -16,9 +16,16 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build:sanity && pwd && react-scripts build:web",
+    "build:web": "react-scripts build",
+    "start:web": "react-scripts start",
+    "build:sanity": "cd mysanityproject  && sanity build ../public/mysanityproject  -y && cd ..",
+    "start:sanity": "cd mysanityproject  && sanity start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@sanity/cli": "^2.0.5"
   },
   "eslintConfig": {
     "extends": "react-app"

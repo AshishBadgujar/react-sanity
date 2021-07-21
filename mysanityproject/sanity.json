@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "My Sanity Blog"
+    "name": "My Sanity Project"
   },
   "api": {
-    "projectId": "yea2w5c3",
+    "projectId": "rp3lgz7n",
     "dataset": "production"
   },
   "plugins": [
